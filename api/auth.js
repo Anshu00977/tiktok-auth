@@ -17,7 +17,7 @@ export default function handler(req, res) {
   // You can also check state here if you store it for CSRF protection
 
   // If code exists, proceed with token exchange (your next step)
-  res.send(`✅ Auth code received: ${code}`);
+  res.send(`✅ riock n roolll Auth code received: ${code}`);
 }
 
 // File: api/auth.js
