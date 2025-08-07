@@ -1,5 +1,8 @@
 {
   "version": 2,
-  "builds": [{ "src": "api/auth.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/auth/tiktok/callback", "dest": "/api/auth.js" }]
+  "builds": [{ "src": "api/*.js", "use": "@vercel/node" }],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1.js" },
+    { "src": "/auth/tiktok/callback", "dest": "/api/auth.js" }
+  ]
 }
